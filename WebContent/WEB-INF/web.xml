@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>FirstProject</display-name>
+  <servlet>
+    <servlet-name>reg</servlet-name>
+    <servlet-class>com.first.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reg</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>terms</servlet-name>
+    <servlet-class>com.first.servlet.TermsAndConditions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>terms</servlet-name>
+    <url-pattern>/termsandconditions</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>com.first.servlet.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>second</servlet-name>
+    <url-pattern>/secondPage</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>last</servlet-name>
+    <servlet-class>com.first.servlet.LastPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>last</servlet-name>
+    <url-pattern>/last</url-pattern>
+  </servlet-mapping>
+</web-app>
